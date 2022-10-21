@@ -11,10 +11,10 @@
 
 import PackageDescription
 
-let sdkVersion = "0.2.2436"
+let sdkVersion = "0.2.2481"
 
 let modules: [Module] = [
-    Module("TomTomSDKNavigationEngine", sha: "173092a3f97a10a1487226e717f044cc45f2065cbe2c9c0d8fb65a872f84c186", version: "0.2.2436", dependencies: [
+    Module("TomTomSDKNavigationEngine", sha: "6792128ebd629f5a56c28ce9bc7cbb0c6c01c209caef2a16ae89112a67cd6480", version: "0.2.2481", dependencies: [
         "TomTomSDKFrameworkClientCommonInternal",
         "TomTomSDKNavigationClientInternal",
         "TomTomSDKNavigationServiceInternal",
@@ -34,7 +34,7 @@ let modules: [Module] = [
         .packageDependency("TomTomSDKFrameworkLoggingInternal", package: "tomtom-sdk-spm-core"),
         .packageDependency("TomTomSDKFrameworkHTTPInternal", package: "tomtom-sdk-spm-core"),
     ]),
-    Module("TomTomSDKNavigationView", sha: "ce9c4c2e40be891e606fb71acf082d1d04302358900b58d84469f90e5f8ab510", version: "0.2.2436", dependencies: [
+    Module("TomTomSDKNavigationView", sha: "e6ad3d789fe9e96f21a6897ea0c9e2706a4a69889b21d50e1ffc9bb6a74b7256", version: "0.2.2481", dependencies: [
         "TomTomSDKNavigationEngine",
         "TomTomSDKTextToSpeech",
         "TomTomSDKSystemTextToSpeechEngine",
@@ -46,63 +46,63 @@ let modules: [Module] = [
         .packageDependency("TomTomSDKRouting", package: "tomtom-sdk-spm-core"),
         .packageDependency("TomTomSDKLocation", package: "tomtom-sdk-spm-core"),
     ]),
-    Module("TomTomSDKTextToSpeechEngine", sha: "c36af2abb10acb0a10b78d44d8c44bf0fd7acd93104f5ecd2c66c92d2570fd19", version: "0.2.2436"),
-    Module("TomTomSDKSystemTextToSpeechEngine", sha: "356a990d41223a37e2465be7e312b6c1b1140bdf65e6caa2f9b7d4ef646215be", version: "0.2.2436", dependencies: [
+    Module("TomTomSDKTextToSpeechEngine", sha: "1505ad6b4542e7a66efc9e10e2b6770cebb2b64aaeec25d6658c569829e025d0", version: "0.2.2481"),
+    Module("TomTomSDKSystemTextToSpeechEngine", sha: "5e67446ce384e4fda39a4ababbdb96257bf066b9f10159aa1733008d3b036f88", version: "0.2.2481", dependencies: [
         "TomTomSDKTextToSpeechEngine",
     ]),
-    Module("TomTomSDKTextToSpeech", sha: "de660c0a321ef96ca0b04f6508f212242a49a09f6c273f097f458430ff830e65", version: "0.2.2436", dependencies: [
+    Module("TomTomSDKTextToSpeech", sha: "cd764e053a04bc569d938e6e9f1c816e721d24a611cb0a3dcb0d7c4799442274", version: "0.2.2481", dependencies: [
         "TomTomSDKTextToSpeechEngine",
     ]),
-    Module("TomTomSDKDynamicRoutingApi", sha: "bcb2b6310ab46228f84ab74bcb351b16e25697e5171a9ec22d9d57d1e8e5e7a9", version: "0.2.2436", dependencies: [
+    Module("TomTomSDKDynamicRoutingApi", sha: "33ac2a739b7e7b2dae96f39ef9719e9192f67dcfca1ceeddd233cf99125fb052", version: "0.2.2481", dependencies: [
         // core package dependencies
         .packageDependency("TomTomSDKCommon", package: "tomtom-sdk-spm-core"),
         .packageDependency("TomTomSDKRoute", package: "tomtom-sdk-spm-core"),
         .packageDependency("TomTomSDKRouting", package: "tomtom-sdk-spm-core"),
     ]),
-    Module("TomTomSDKOnlineDynamicRoutingApi", sha: "d0ba1bd89d1d0c28f2e761f44677e1d0cfdcd2c7e17c9a1ec5e89ac2ccc439f6", version: "0.2.2436", dependencies: [
+    Module("TomTomSDKOnlineDynamicRoutingApi", sha: "4a096e9f54e0ff85e883e4902f0cc43d76d72f600ff4c121413028f26e599760", version: "0.2.2481", dependencies: [
         "TomTomSDKDynamicRoutingApi",
         // core package dependencies
         .packageDependency("TomTomSDKCommon", package: "tomtom-sdk-spm-core"),
         .packageDependency("TomTomSDKRoute", package: "tomtom-sdk-spm-core"),
         .packageDependency("TomTomSDKRouting", package: "tomtom-sdk-spm-core"),
     ]),
-    Module("TomTomSDKNavigationVisualizationAddon", sha: "209c4e2320bc020b46ac3f497eaa92da00e0323eed2eac2884d9d6b78fc23346", version: "0.2.2436", dependencies: [
+    Module("TomTomSDKNavigationVisualizationAddon", sha: "1e2d0881ef22c865f4128607fc83367755a9ce1b1a3292828525b966b460f95b", version: "0.2.2481", dependencies: [
         "TomTomSDKNavigationEngine",
         // core package dependencies
         .packageDependency("TomTomSDKCommon", package: "tomtom-sdk-spm-core"),
         .packageDependency("TomTomSDKMapsDisplay", package: "tomtom-sdk-spm-core"),
         .packageDependency("TomTomSDKRoute", package: "tomtom-sdk-spm-core"),
     ]),
-    Module("TomTomSDKRangeVisualizationAddon", sha: "d70320fc4e085316a2a8565e9a8d609ac2886fe706b9369bedbeba012544ee09", version: "0.2.2436", dependencies: [
+    Module("TomTomSDKRangeVisualizationAddon", sha: "0ac9ba0671c847ecfa7c601606c3d64300e0cceb3cbacec84ff6d3586dc89639", version: "0.2.2481", dependencies: [
         // core package dependencies
         .packageDependency("TomTomSDKMapsDisplay", package: "tomtom-sdk-spm-core"),
     ]),
-    Module("TomTomSDKFrameworkClientCommonInternal", sha: "5c8e7057ca0c3d3c44ecb66f2b51f3d9d424fb4277a070a0f98cf03024e6f87e", version: "18.83.0", isProduct: false),
-    Module("TomTomSDKNavigationDrivingAssistanceClientInternal", sha: "bb0fea2743f32f64b2ff730ba1f71b832d730d56c34cbe78e90ad9e5d43154be", version: "18.83.0", isProduct: false, dependencies: [
+    Module("TomTomSDKFrameworkClientCommonInternal", sha: "ecdec8724ca9b67449f7f2f954b78b3e71a1d3a25b6fa6b15a53dfe324fbe301", version: "19.8.0", isProduct: false),
+    Module("TomTomSDKNavigationDrivingAssistanceClientInternal", sha: "8050ec05ccc03f6d78bfaeaf68e400a05a51b4fedc68ae6360511a521f37133e", version: "19.8.0", isProduct: false, dependencies: [
         "TomTomSDKFrameworkClientCommonInternal",
     ]),
-    Module("TomTomSDKFrameworkMemChannelInternal", sha: "a8eef304d49919f998d0c24308b65f9dde2e61c6f3f35afafbf9bcb7675fc4d2", version: "18.83.0", isProduct: false),
-    Module("TomTomSDKNavigationClientInternal", sha: "137e9a4982035aa6583e50d85d86d6b37a8f8ba16c3c1e633d38e2d1ddfdad90", version: "18.83.0", isProduct: false, dependencies: [
+    Module("TomTomSDKFrameworkMemChannelInternal", sha: "0853e7585266119d803ba797136a0020bddd3334f09e8ff2449b9a74d6809657", version: "19.8.0", isProduct: false),
+    Module("TomTomSDKNavigationClientInternal", sha: "d32173fd96e86fb02d40cd61069eb247c45b48e7be5aa4ac7a60b32dcae88d90", version: "19.8.0", isProduct: false, dependencies: [
         "TomTomSDKFrameworkClientCommonInternal",
         "TomTomSDKFrameworkMemChannelInternal",
     ]),
-    Module("TomTomSDKFrameworkSecurityInternal", sha: "bb09f676a955a9a08b4d26d9df1baf910940eae5420717f2f09eb377f868c3b5", version: "18.83.0", isProduct: false),
-    Module("TomTomSDKNavigationServiceInternal", sha: "04c6eeed12021ffabb0a2e74dba5026209c1337a94d5f2c35fd250db772c4c6a", version: "18.83.0", isProduct: false, dependencies: [
+    Module("TomTomSDKFrameworkSecurityInternal", sha: "ce01f9ad0d144aa3e93b8734373b42f914be639d0309a559b1ac290e48f81028", version: "19.8.0", isProduct: false),
+    Module("TomTomSDKNavigationServiceInternal", sha: "e7179a8f185c271ff22ae72db477a41d0c60f6c4a16ac2a3c11de61d96951ed8", version: "19.8.0", isProduct: false, dependencies: [
         "TomTomSDKFrameworkSecurityInternal",
     ]),
-    Module("TomTomSDKNavigationPositioningInternal", sha: "1ad498506d45304195f1bb3255ef772aa365613625d0dac0582df5170434de4c", version: "18.83.0", isProduct: false),
-    Module("TomTomSDKNavigationMapMatcherPredictionInternal", sha: "17fc1b6da8592a1bd35a7260c548df725561aca3701fd0a687eaff067d7b55ea", version: "18.83.0", isProduct: false, dependencies: [
+    Module("TomTomSDKNavigationPositioningInternal", sha: "135e48aee0b45aa28ae2ef3b637f057675d1f4c3402c64fbfb84c6c1f628873a", version: "19.8.0", isProduct: false),
+    Module("TomTomSDKNavigationMapMatcherPredictionInternal", sha: "caf02dafce521b4f36ed0273b858cb4a40cdecfdbbbc806b3af526d6ef45f61a", version: "19.8.0", isProduct: false, dependencies: [
         "TomTomSDKFrameworkClientCommonInternal",
     ]),
-    Module("TomTomSDKNavigationTextGenerationInternal", sha: "c8f9aaa8c9bb8e724f80016a8c901f2b2106b07b6de7c8a457a0874ae894c7d6", version: "18.83.0", isProduct: false),
-    Module("TomTomSDKBindingRouteProjectionInternal", sha: "99b738729ca03f7d6e3a7d6a3f64954014327f7dd016b278c0e40ff09413d110", version: "0.2.2436", isProduct: false),
-    Module("TomTomSDKDynamicRoutingApi", sha: "bcb2b6310ab46228f84ab74bcb351b16e25697e5171a9ec22d9d57d1e8e5e7a9", version: "0.2.2436", dependencies: [
+    Module("TomTomSDKNavigationTextGenerationInternal", sha: "357a37c191d066a23e1671904feb88d0242e135ae38b9ed895f76846dc6f6f4f", version: "19.8.0", isProduct: false),
+    Module("TomTomSDKBindingRouteProjectionInternal", sha: "7b1c64e8277afd42e260a69cd8a0155d5074b41efdc116fcc08b7435a03b0ea6", version: "0.2.2481", isProduct: false),
+    Module("TomTomSDKDynamicRoutingApi", sha: "33ac2a739b7e7b2dae96f39ef9719e9192f67dcfca1ceeddd233cf99125fb052", version: "0.2.2481", dependencies: [
         // core package dependencies
         .packageDependency("TomTomSDKCommon", package: "tomtom-sdk-spm-core"),
         .packageDependency("TomTomSDKRoute", package: "tomtom-sdk-spm-core"),
         .packageDependency("TomTomSDKRouting", package: "tomtom-sdk-spm-core"),
     ]),
-    Module("TomTomSDKBindingNavigationTileStoreAccessInternal", sha: "6a6b9c2bb0199307321cb4dbc5b1057bb1539902ee91d8f8deee8be38efc2325", version: "0.2.2436", isProduct: false),
+    Module("TomTomSDKBindingNavigationTileStoreAccessInternal", sha: "5c3418cc169b1f780d6fc90591735e4fd4ae284573a020a87d7ced581299cd2d", version: "0.2.2481", isProduct: false),
 ]
 
 let package = Package(
