@@ -6,8 +6,6 @@ The Navigation SDK issues visual and audio turn-by-turn instructions at the righ
 
 It is also highly customizable, letting customers redefine various aspects of the guidance logic.
 
-> The Navigation SDK for iOS is only available upon request. [Contact us](https://developer.tomtom.com/tomtom-sdk-for-ios/request-access) to get started.
-
 ## Requirements
 
 1. Xcode 14.2+
@@ -34,7 +32,7 @@ It is also highly customizable, letting customers redefine various aspects of th
 ### Adding the TomTomSDKNavigationFrameworks package to your SPM package
 1. Add next line to your package dependencies in the `Package.swift` file:
     ```swift
-    .package(url: "https://github.com/tomtom-international/tomtom-sdk-spm-navigation", exact: "0.30.0")
+    .package(url: "https://github.com/tomtom-international/tomtom-sdk-spm-navigation", exact: "0.31.0")
     ```
     > We recommend using the `exact` version to have a consistent resolution.
 2. Add next required module to your target dependencies in the `Package.swift` file, e.g.:
@@ -50,7 +48,7 @@ It is also highly customizable, letting customers redefine various aspects of th
             .library(name: "MyLibrary", targets: ["MyLibrary"]),
         ],
         dependencies: [
-            .package(url: "https://github.com/tomtom-international/tomtom-sdk-spm-navigation", exact: "0.30.0")
+            .package(url: "https://github.com/tomtom-international/tomtom-sdk-spm-navigation", exact: "0.31.0")
         ],
         targets: [
            .target(name: "MyLibrary", dependencies: [
