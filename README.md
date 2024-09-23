@@ -32,7 +32,7 @@ It is also highly customizable, letting customers redefine various aspects of th
 ### Adding the TomTomSDKNavigationFrameworks package to your SPM package
 1. Add next line to your package dependencies in the `Package.swift` file:
     ```swift
-    .package(url: "https://github.com/tomtom-international/tomtom-sdk-spm-navigation", exact: "0.62.0")
+    .package(url: "https://github.com/tomtom-international/tomtom-sdk-spm-navigation", exact: "0.47.5")
     ```
     > We recommend using the `exact` version to have a consistent resolution.
 2. Add next required module to your target dependencies in the `Package.swift` file, e.g.:
@@ -43,12 +43,12 @@ It is also highly customizable, letting customers redefine various aspects of th
     ```swift
     let package = Package(
         name: "MyLibrary",
-        platforms: [.iOS(.v14)],
+        platforms: [.iOS(.v13)],
         products: [
             .library(name: "MyLibrary", targets: ["MyLibrary"]),
         ],
         dependencies: [
-            .package(url: "https://github.com/tomtom-international/tomtom-sdk-spm-navigation", exact: "0.62.0")
+            .package(url: "https://github.com/tomtom-international/tomtom-sdk-spm-navigation", exact: "0.47.5")
         ],
         targets: [
            .target(name: "MyLibrary", dependencies: [
